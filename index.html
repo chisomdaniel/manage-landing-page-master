@@ -47,7 +47,19 @@
         </p>
         <button>Get Started</button>
       </div>
-      <img src="images/illustration-intro.svg" alt="illustration" />
+      <picture>
+        <source
+          media="(min-width: 800px)"
+          srcset="images/illustration-intro.svg 1x"
+          type="image/svg"
+        />
+
+        <img
+          src="images/illustration-intro.svg"
+          alt="illustration"
+          loading="lazy"
+        />
+      </picture>
     </header>
 
     <section>
@@ -92,7 +104,19 @@
     <section>
       <h2>What they've said</h2>
       <div>
-        <img src="/images/avatar-anisha.png" alt="image of a person" />
+        <picture>
+          <source
+            media="(min-width: 800px)"
+            srcset="/images/avatar-anisha.png 1x"
+            type="image/png"
+          />
+          <img
+            src="/images/avatar-anisha.png"
+            alt="image of a person"
+            loading="lazy"
+          />
+        </picture>
+
         <p>Anisha Li</p>
         <p>
           “Manage has supercharged our team’s workflow. The ability to maintain
@@ -101,7 +125,19 @@
         </p>
       </div>
       <div>
-        <img src="/images/avatar-ali.png" alt="Image of a person" />
+        <picture>
+          <source
+            media="(min-width: 800px)"
+            srcset="/images/avatar-ali.png 1x"
+            type="image/png"
+          />
+
+          <img
+            src="/images/avatar-ali.png"
+            alt="Image of a person"
+            loading="lazy"
+          />
+        </picture>
         <p>Ali Bravo</p>
         <p>
           “We have been able to cancel so many other subscriptions since using
@@ -110,7 +146,19 @@
         </p>
       </div>
       <div>
-        <img src="/images/avatar-richard.png" alt="Image of a man" />
+        <picture>
+          <source
+            media="(min-width: 800px)"
+            srcset="/images/avatar-richard.png"
+            type="image/png"
+          />
+
+          <img
+            src="/images/avatar-richard.png"
+            alt="Image of a man"
+            loading="lazy"
+          />
+        </picture>
         <p>Richard Watts</p>
         <p>
           “Manage allows us to provide structure and process. It keeps us
@@ -129,6 +177,14 @@
 
     <footer>
       <img src="images/logo.svg" alt="company logo" />
+
+      <a href="#">Home</a>
+      <a href="#">Pricing</a>
+      <a href="#">Product</a>
+      <a href="#">About Us</a>
+      <a href="#">Careers</a>
+      <a href="#">Community</a>
+      <a href="#">Privacy policy</a>
     </footer>
 
     <div class="attribution">
